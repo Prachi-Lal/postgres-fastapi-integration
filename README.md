@@ -7,24 +7,36 @@ Project Overview
 The Online Flower Shop API is a web application built using FastAPI and PostgreSQL. It serves as a virtual showcase for different types of flowers, allowing users to register, browse flowers, and place orders online. The application aims to automate the activities related to a florist shop, making online shopping easy and efficient.
 
 ### Features
+
 User registration and authentication
+
 Browse flowers with details
+
 Place orders for flowers
+
 Manage stock quantities automatically
+
 Simple and intuitive API design
 
 ### Technologies Used
+
 FastAPI: A modern web framework for building APIs with Python 3.6+ based on standard Python type hints.
+
 PostgreSQL: A powerful, open-source relational database system.
+
 Psycopg2: PostgreSQL adapter for Python.
+
 Uvicorn: ASGI server for running FastAPI applications.
 
 ### Installation
+
 Clone the Repository:
 ```git clone https://github.com/Prachi-Lal/postgres-fastapi-integration.git```
+
 Create a virtual environment (Optional but recommended):
 ```python -m venv venv```
 ```venv\Scripts\activate```
+
 Install Required Packages:
 ```pip install -r requirements.txt```
 
@@ -38,9 +50,13 @@ To run the FastAPI application, use the following command:
 ```uvicorn main:app --reload```
 
 ### API Endpoints
+
 User Registration
+
 Endpoint: /register/
+
 Method: POST
+
 Request Body:
 
 ```json

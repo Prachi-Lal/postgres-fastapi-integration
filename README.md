@@ -32,6 +32,54 @@ Psycopg2: PostgreSQL adapter for Python.
 Uvicorn: ASGI server for running FastAPI applications.
 
 ### Installation
-Clone the Repository
+Clone the Repository:
+```git clone https://github.com/Prachi-Lal/postgres-fastapi-integration.git```
+Create a virtual environment (Optional but recommended):
+```python -m venv venv```
+```venv\Scripts\activate```
+Install Required Packages:
+```pip install -r requirements.txt```
 
-bash
+### Database Setup
+Install PostgreSQL: Make sure you have PostgreSQL installed on your machine. You can download it from PostgreSQL's official website.
+
+Run the SQL Scripts: Use the provided SQL scripts to create the necessary tables and insert sample data. You can execute the SQL commands in a PostgreSQL client like psql or any GUI tool like pgAdmin.
+
+### Running the Application
+To run the FastAPI application, use the following command:
+```uvicorn main:app --reload```
+
+### API Endpoints
+User Registration
+Endpoint: /register/
+Method: POST
+Request Body:
+
+```json
+{
+    "username": "new_user",
+    "password": "password123",
+    "email": "new_user@example.com",
+    "role": "Customer"}
+```
+
+A successful run would look like this:
+
+```json
+{
+    "message": "User  registered successfully"
+}
+```
+
+Wheras, an error would look like this:
+
+```json
+{
+  "detail": "duplicate key value violates unique constraint \"users_username_key\"\nDETAIL:  Key (username)=(new_user) already exists.\n"
+}
+```
+
+
+
+
+

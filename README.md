@@ -2,19 +2,7 @@
 Online flower shop database backend with fastapi integration
 
 ## Online Flower Shop API
-Table of Contents
-Project Overview
-Features
-Technologies Used
-Installation
-Database Setup
-API Endpoints
-User Registration
-Place Order
-Running the Application
-Testing the API
-Contributing
-License
+
 Project Overview
 The Online Flower Shop API is a web application built using FastAPI and PostgreSQL. It serves as a virtual showcase for different types of flowers, allowing users to register, browse flowers, and place orders online. The application aims to automate the activities related to a florist shop, making online shopping easy and efficient.
 
